@@ -34,9 +34,9 @@ body:
   - type: input
     id: assagnee
     attributes:
-      label: assagnee
-      description: name or team
-      placeholder: author
+      label: Assagnee
+      description: Team name or Dev
+      placeholder: Author
     validations:
       required: false
   - type: input
@@ -52,7 +52,7 @@ body:
     attributes:
       label: Component Name
       description: In which part of the product
-      placeholder: login form
+      placeholder: Login form
     validations:
       required: false
   - type: dropdown
@@ -61,8 +61,8 @@ body:
       label: Version
       description: What version of our software are you running?
       options:
-        - release (Default)
-        - test_build (Edge)
+        - Release
+        - Test_build
     validations:
       required: true
   - type: textarea
@@ -71,7 +71,13 @@ body:
       label: What happened?
       description: Also tell us, what did you expect to happen?
       placeholder: Tell us what you see!
-      value: "A bug happened!"
+      value: "pre-requirements: none"
+      ""
+      "Steps to reproduce:"
+      ""
+      "Expected result:"
+      ""
+      "Actual result:"
     validations:
       required: true
   - type: dropdown
