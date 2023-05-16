@@ -1,17 +1,17 @@
-name: Bug Report Template
+"name": "Bug Report Template"
 
-on:
-  issues:
-    types:
-      - opened
+"on":
+  "issues":
+    "types":
+      - "opened"
 
-jobs:
-  bug_report_template:
-    runs-on: ubuntu-latest
+"jobs":
+  "bug_report_template":
+    "runs-on": "ubuntu-latest"
 
-    steps:
-      - name: Add Bug Report Template
-        run: |
+    "steps":
+      - "name": "Add Bug Report Template"
+        "run": |
           echo "## Bug Report Template" >> ${{ github.event.issue.body }}
           echo "- **Summary:**" >> ${{ github.event.issue.body }}
           echo "- **Description:**" >> ${{ github.event.issue.body }}
@@ -20,8 +20,8 @@ jobs:
           echo "- **Actual Result:**" >> ${{ github.event.issue.body }}
           echo "- **Attachments:**" >> ${{ github.event.issue.body }}
 
-      - name: Update Issue
-        run: |
+      - "name": "Update Issue"
+        "run": |
           echo "${{ github.event.issue.body }}" > ${{ github.event.issue.body }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        "env":
+          "GITHUB_TOKEN": ${{ secrets.GITHUB_TOKEN }}
