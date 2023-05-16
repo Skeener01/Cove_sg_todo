@@ -71,13 +71,15 @@ body:
       label: What happened?
       description: Also tell us, what did you expect to happen?
       placeholder: Tell us what you see!
-      value: "pre-requirement\: none\n
-      \n
-      Steps to reproduce\:\n
-      \n
-      Expected result\:\n
-      \n
-      Actual result\:"
+      value: pre-requirement
+      none
+
+      Steps to reproduce
+
+      Expected result
+
+      Actual result
+      
     validations:
       required: true
   - type: dropdown
