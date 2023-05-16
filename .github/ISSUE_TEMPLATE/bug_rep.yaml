@@ -14,10 +14,11 @@ body:
     attributes:
       label: Priority
       description: How urgent to fix?
+      value: "Medium (Default)"
       options:
-        - High (Edge)
+        - High
         - Medium (Default)
-        - Low (Edge)
+        - Low
     validations:
       required: false
   - type: dropdown
@@ -25,10 +26,19 @@ body:
     attributes:
       label: Severity
       description: How serious is it?
+      value: "Low"
       options:
-        - High (Edge)
+        - High
         - Medium (Default)
-        - Low (Edge)
+        - Low
+    validations:
+      required: false
+  - type: input
+    id: assagnee
+    attributes:
+      label: assagnee
+      description: name or team
+      placeholder: author
     validations:
       required: false
   - type: input
