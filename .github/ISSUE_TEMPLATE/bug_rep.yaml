@@ -9,14 +9,54 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
-  - type: input
-    id: contact
+  - type: dropdown
+    id: priority
     attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+      label: Priority
+      description: How urgent to fix?
+      options:
+        - High (Edge)
+        - Medium (Default)
+        - Low (Edge)
     validations:
       required: false
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      description: How serious is it?
+      options:
+        - High (Edge)
+        - Medium (Default)
+        - Low (Edge)
+    validations:
+      required: false
+  - type: input
+    id: product
+    attributes:
+      label: Product Name
+      description: Where you found issue
+      placeholder: used programm
+    validations:
+      required: false
+  - type: input
+    id: component
+    attributes:
+      label: Component Name
+      description: In which part of the product
+      placeholder: login form
+    validations:
+      required: false
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: What version of our software are you running?
+      options:
+        - release (Default)
+        - test_build (Edge)
+    validations:
+      required: true
   - type: textarea
     id: what-happened
     attributes:
@@ -24,16 +64,6 @@ body:
       description: Also tell us, what did you expect to happen?
       placeholder: Tell us what you see!
       value: "A bug happened!"
-    validations:
-      required: true
-  - type: dropdown
-    id: version
-    attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
     validations:
       required: true
   - type: dropdown
@@ -47,9 +77,17 @@ body:
         - Safari
         - Microsoft Edge
         - Opera
-  - type: textarea
-    id: logs
+  - type: input
+    id: build
     attributes:
-      label: Relevant log output
+      label: browser version
+      description: used version of a browser
+      placeholder: latest
+    validations:
+      required: false
+  - type: textarea
+    id: additional
+    attributes:
+      label: Relevant log output or any other info
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
       render: shell
