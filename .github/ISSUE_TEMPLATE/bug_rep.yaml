@@ -14,10 +14,10 @@ body:
     attributes:
       label: Priority
       description: How urgent to fix?
-      value: "Medium (Default)"
+      default: Medium
       options:
         - High
-        - Medium (Default)
+        - Medium
         - Low
     validations:
       required: false
@@ -26,10 +26,10 @@ body:
     attributes:
       label: Severity
       description: How serious is it?
-      value: "Low"
+      default: Medium
       options:
         - High
-        - Medium (Default)
+        - Medium
         - Low
     validations:
       required: false
