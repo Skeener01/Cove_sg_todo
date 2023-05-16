@@ -26,9 +26,11 @@ body:
       label: Severity
       description: How serious is it?
       options:
-        - High
-        - Medium
-        - Low
+        - Critical
+        - Major
+        - Moderate
+        - Minor
+        - Cosmetic
     validations:
       required: false
   - type: input
@@ -71,7 +73,7 @@ body:
       label: What happened?
       description: Also tell us, what did you expect to happen?
       placeholder: Tell us what you see!
-      value: "Pre-requirements:\nNone\n\nSteps to reproduce:\n\n Expected result:\n\n Actual result:"      
+      value: "**Pre-requirements:**\nNone\n\n**Steps to reproduce:**\n\n**Expected result:**\n\n**Actual result:**"      
     validations:
       required: true
   - type: dropdown
