@@ -14,7 +14,7 @@ body:
     attributes:
       label: Priority
       description: How urgent to fix?
-      default: Medium
+      "default": Medium
       options:
         - High
         - Medium
@@ -26,7 +26,7 @@ body:
     attributes:
       label: Severity
       description: How serious is it?
-      default: Medium
+      "default": Medium
       options:
         - High
         - Medium
