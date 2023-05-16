@@ -1,0 +1,27 @@
+summary: [Provide a brief summary of the issue]
+description: |
+  [Provide a detailed description of the issue, including any relevant context, steps to reproduce, and expected/actual behavior]
+
+priority: [Specify the priority of the issue (e.g., High, Medium, Low)]
+labels:
+  - [Specify any relevant labels to categorize the issue (e.g., bug, enhancement, documentation)]
+attachments:
+  - [If applicable, list any relevant attachments or files related to the issue]
+affectedVersion: [Specify the version(s) of the software/project affected by the issue]
+stepsToReproduce:
+  - [Step 1]
+  - [Step 2]
+  - [Step 3]
+  ...
+expectedBehavior: |
+  [Describe the expected behavior when following the steps]
+actualBehavior: |
+  [Describe the actual behavior observed]
+additionalInformation: |
+  [Provide any additional information, screenshots, or logs that may be helpful in understanding the issue]
+assignedTo: [Assign the issue to the relevant team member]
+dueDate: [Specify the due date for resolving the issue]
+relatedIssues:
+  - [List any related issues or dependencies]
+comments:
+  - [Add any relevant comments or notes regarding the issue]
